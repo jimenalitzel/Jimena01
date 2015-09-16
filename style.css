@@ -1,9 +1,12 @@
+.featurette-divider {
+  margin: 80px 0;
+}   
 /*Navbar*/
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(0, 0, 0, 1);
 }
 #custom-bootstrap-menu.navbar-default {
-    font-size: 16px;
+    font-size: 18px;
     background-color: rgba(248, 248, 248, 0);
     border-width: 0px;
     border-radius: 0px;
@@ -39,7 +42,7 @@
 } 
 
 .divGde{
-  height: 500px;
+  height: 600px;
 }
 
 #spoons{
@@ -49,6 +52,7 @@
   background-attachment: fixed;
   background-color.opacity: 0.1;
   height: 200px;
+  width:1700px;
 }
 /* Underline From Center */
 .hvr-underline-from-center {
