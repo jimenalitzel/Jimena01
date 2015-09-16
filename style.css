@@ -72,25 +72,42 @@
   right: 0;
 }
 
-/*Letras Iniciales*/
+/*Letras Iniciales(2) y nuevas*/
 h1.cuteH1 {
   color: #d54d7b;
   font-family: "Great Vibes", cursive;
   font-size: 165px;
-  line-height: 160px;
+  line-height: 190px;
   font-weight: normal;
   margin-bottom: 0px;
-  margin-top:40px;
+  margin-top:80px;
   text-align: center;
   text-shadow:0 1px 1px #fff;
+}
+h2.title2 {
+  color: #d0386c;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 45px;
+  margin: 0 0 24px;
+  text-shadow: 1px 1px 1px #452439;
 }
 
 p.cuteP {
   color: #7a7c7f;
   font-size: 29px;
   font-family: "Libre Baskerville", serif;
-  line-height: 45px;
+  line-height: 100px;
   text-align: center;
   text-shadow:0 1px 1px #fff;
   padding-top:20px;
+}
+
+p.p2 {
+  color: #3c0e22;
+  font-family: 'Carme', sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 0 24px;
 }
