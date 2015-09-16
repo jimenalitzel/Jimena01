@@ -38,6 +38,10 @@
     background-color: #f8f8f8;
 } 
 
+.divGde{
+  height: 730px;
+}
+
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -58,7 +62,7 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: #737a7e;
+  background: #5c1534;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
