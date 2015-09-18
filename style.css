@@ -51,9 +51,41 @@
   height: 200px;
   width:1700px;
 }
-
-#spoons{
-   background-image: url("./img/spoons.jpg");
+.spoons01{
+  background-image: url("./img/spoons.jpg");
+  background-size: 100%;  
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 150px;
+}
+.bgspoons01-inside {
+  padding-top: 80.15%; /* this is actually (426/1140)*100 */
+}
+.spoons02{
+  background-image: url("./img/spoons.jpg");
+  background-size: 100%;  
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 100px;
+}
+.bgspoons02-inside {
+  padding-top: 96.80%; /* this is actually (426/1140)*100 */
+}
+.spoons03{
+  background-image: url("./img/spoons3.jpg");
+  background-size: 100%;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  height: 100px;
+}
+.bgspoons03-inside {
+  padding-top: 80.15%; /* this is actually (426/1140)*100 */
+}
+/*#spoons{
+   background: url("./img/spoons.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -64,7 +96,7 @@
 #spoons2{
    background-image: url("./img/spoons2.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: bottom;
   background-attachment: fixed;
   height: 100px;
   width:2000px;
@@ -73,16 +105,21 @@
 #spoons3{
    background-image: url("./img/spoons3.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   height: 50px;
   width:2000px;
   opacity: 1;
-}
+}*/
 #photos{
  height: 500px;
  width: 900px;
 }
+.center {
+    margin: 50px;
+    padding: 10px;
+}
+
 /* Underline From Center */
 .hvr-underline-from-center {
   display: inline-block;
@@ -230,20 +267,20 @@
 h1.cuteH1 {
   color: #d54d7b;
   font-family: "Great Vibes", cursive;
-  font-size: 165px;
-  line-height: 190px;
+  font-size: 120px;
+  line-height: 140px;
   font-weight: normal;
   margin-bottom: 0px;
-  margin-top:80px;
+  margin-top: 80px;
   text-align: center;
   text-shadow:0 1px 1px #fff;
 }
 h2.title2 {
   color: #d0386c;
   font-family: 'Julius Sans One', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 40px;
   margin: 0 0 24px;
   text-shadow: 1px 1px 1px #452439;
 }
