@@ -1,332 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
   
+  <link rel="icon" href="./img/Lente01.png" type="image/x-icon">
   <title>Jimena Alitzel</title>
-  <link rel="icon" href="./img/piggy.jpg" type="image/x-icon">
 
-  
+<!--Letras Nuevas-->
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Carme' rel='stylesheet' type='text/css'>
+
 
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.css">  
 
 </head>
-    <body data-spy="scroll" data-target="#scrollspy">  
 
-      <nav id="scrollspy" class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
-          </div>
-
-          <div class="collapse navbar-collapse" id="bs-navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#Carousel">Carousel</a></li>
-              <li><a href="#Jumbotron">Jumbotron</a></li>
-              <li><a href="#MainContainer">MainContainer <span class="badge">24</span></a></li>
-              <li><a href="#Tabs">Tabs</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#Tabs">Another action</a></li>
-                  <li><a href="http://www.orkugifs.com/es/images/gatito-conductor_854.gif">Something else here</a></li>
-                  <li><a href="http://docs.emmet.io/abbreviations/lorem-ipsum/">Info</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li><a href="http://www.w3schools.com/bootstrap/bootstrap_button_groups.asp">Separated link</a></li>
+    <body data-spy="scroll" data-target="#scrollspy" data-offset="50">
+      <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand hvr-pop" href="#"><img style="max-width:35px; margin-top:-5px; margin-left:5px;" src="./img/Lente01.png"></img></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-menubuilder">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#mainContainer" class="hvr-underline-from-center">Home</a></li>
+                    <li><a href="#aboutMe" class="hvr-underline-from-center">Hello</a></li>
+                    <li><a href="#More" class="hvr-underline-from-center">More</a></li>
+                    <li><a href="#Contact" class="hvr-underline-from-center">Contact</a></li>
                 </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div id="Carousel" class="carousel slide" data-ride="carousel">
-         <ol class="carousel-indicators">
-           <li data-target="#Carousel" data-slide-to="0"></li>
-           <li data-target="#Carousel" data-slide-to="1" class="active"></li>
-           <li data-target="#Carousel" data-slide-to="2"></li>
-         </ol>
-         <div class="carousel-inner" role="listbox">
-           <div class="item">
-             <div class="carousel-caption">
-              <h2>Ejemplo Texto 1</h2>
-              <hr>
-              <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-
-              <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-
-              <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-
-              <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-              <hr>
-             </div>
-           </div>
-           <div class="item active">
-
-             <div class="carousel-caption">
-              <h1>Ejemplo Texto 2</h1>
-              <br>
-              <button class="btn btn-lg btn-warning"  id="Caru">Click to toggle popover</button>
-             </div>
-
-           </div>
-           <div class="item">
-
-             <div class="carousel-caption">
-               <h3>Ejemplo Texto 3</h3>
-               <br>
-              <a tabindex="0" role="button" class="btn btn-lg btn-danger" data-toggle="popover" data-placement="top"data-trigger="focus" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right? #NOT">Click to toggle popover</a>
-             </div>
-
-           </div>
-         </div>
-         <a class="left carousel-control" href="#Carousel" role="button" data-slide="prev">
-           <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-           <span class="sr-only">Previous</span>
-         </a>
-         <a class="right carousel-control" href="#Carousel" role="button" data-slide="next">
-           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-           <span class="sr-only">Next</span>
-         </a>
-      </div>
-
-      <div id="Jumbotron" class="jumbotron">
-        <div class="container">
-          <h1><span class="label label-default">New</span> Hello, world!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cupiditate excepturi maxime! Nam voluptate, expedita ab alias, aut facilis id repellat vel placeat quae dignissimos consequuntur non! Dolorum, recusandae quis.</p>
-            <div class="alert alert-info" role="alert">
-              <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
             </div>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@myname">Open modal for @myname</button>
-
-
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                      <label for="recipient-name" class="control-label">Recipient:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="form-group">
-                      <label for="message-text" class="control-label">Message:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Send message</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
-      <div id="MainContainer" class="container">
+      <div id="mainContainer" class="container divGde">
         <div class="row">
-          <div class="col-md-8">
-            <h2>This First Heading
-              <span class="text-muted">Will Catch Your Eye</span>
-            </h2>
-            <p class="lead">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos nostrum iusto minus, similique. Non qui ipsa quae deleniti illo! Culpa, at facere iusto quia inventore nisi, doloribus dolores praesentium natus.</p>
-
+          <div class="col-md-2 col-xs-0"> </div>
+          <div class="col-md-8 col-xs-12">
+            <h1  class="cuteH1">Jimena</h1>                      
+            <p class="cuteP">México | Blabla</p>
           </div>
-          <div class="col-md-4">
-            <img class="img-circle img-responsive" src="http://placehold.it/300x300">
-          </div>
-
-          <hr class="col-md-12 featurette-divider">
-          <div class="col-md-4">
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M01rsp80LCk?list=PLwlY699Z9ioV_EkKRPx1GzI4RgNH4w2OP" allowfullscreen></iframe>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <h2>The Second Heading <small>Is Pretty Cool Too.</small></h2>
-            <dl class="dl-horizontal text-center">
-              <dt>Lorem ipsum.</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
-              <dt>Lorem ipsum.</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
-              <dt>Lorem ipsum.</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quasi, officia dolores accusantium corrupti delectus.</dd>
-            </dl>
-          </div>
-
-          <hr class="col-md-12 featurette-divider">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-4">
-                <blockquote>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
-              </div>
-              <div class="col-md-4 col-md-offset-4">
-                <blockquote class="blockquote-reverse">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <address>
-              <strong>Twitter, Inc.</strong><br>
-              795 Folsom Ave, Suite 600<br>
-              San Francisco, CA 94107<br>
-              <abbr title="Phone">P:</abbr> (123) 456-7890
-            </address>
-
-            <address>
-              <strong>Full Name</strong><br>
-              <a href="mailto:#">first.last@example.com</a>
-            </address>
-          </div>
-
-          <hr class="col-md-12 featurette-divider">
-          <div class="col-md-6">
-            <table class="table table-hover table-responsive">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Username</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-          </div>
-          <div class="col-md-6">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Remember me
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-default">Sign in</button>
-                </div>
-              </div>
-            </form>
-          </div>
-
-          <hr class="col-md-12 featurette-divider">
+          <div class="col-md-2 col-xs-0"> </div>
         </div>
       </div>
 
-      <div id="Tabs" class="container">
-          
-        <ul class="nav nav-tabs" role="tablist">
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-          <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-        </ul>
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12 spoons01">
+         <div class="spoons01image-inside"></div>
+        </div>
+       </div>
+      </div>
+      
 
-        <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="home">
-            <button type="button" class="btn btn-danger btn-block btn-lg">Don't click</button>
+      <div id="aboutMe" class="container center">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <h2 class="title2 text-right">Hello!</h2>
+            <p class="p2 text-right">I'm Jimena Castelan ... lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu mauris commodo, pulvinar nulla sit amet, condimentum sapien. Duis finibus, orci ut malesuada posuere, mi diam bibendum dui, nec interdum eros nibh volutpat ligula. Vivamus rutrum diam vel nisi ultrices tempor. Nam malesuada vehicula hendrerit. Integer commodo convallis tortor sed sodales. In eu dapibus.</p>
           </div>
-          <div role="tabpanel" class="tab-pane fade" id="profile">
-           <ul>
-             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, suscipit.</li>
-             <li>Fuga illum magni quos laborum exercitationem quod porro ullam consectetur.</li>
-             <li>Dolorem, tempore, aut. Autem quaerat modi illo velit optio saepe.</li>
-             <li>Corporis quo velit inventore voluptatibus dolorum quod commodi iste repellendus!</li>
-             <li>Magnam eaque, vitae sed recusandae veniam incidunt adipisci unde quis!</li>
-             <li>Minima distinctio facere ullam! Sed rerum odit, quidem harum quos!</li>
-             <li>Facilis voluptate iste cum laudantium ullam perspiciatis reiciendis molestiae alias!</li>
-             <li>Velit fugit fugiat voluptas facere optio rem dolorem eveniet a.</li>
-             <li>Numquam ipsam voluptatibus eaque atque sapiente laboriosam, minus officia minima.</li>
-             <li>Voluptatem dolor est soluta iusto incidunt labore culpa et rem?</li>
-           </ul>
-          </div>          
-          <div role="tabpanel" class="tab-pane fade" id="messages">
-            <p>Envelope icon as a link:
-              <a href="#Jumbotron"><span class="glyphicon glyphicon-envelope"></span></a>
-            </p>
-          </div>
-          <div role="tabpanel" class="tab-pane fade" id="settings">                     
-            <p>Search icon: <span class="glyphicon glyphicon-search"></span></p>
-            <p>Search icon on a styled button:
-              <button type="button" class="btn btn-info">
-                <span class="glyphicon glyphicon-search"></span> Search
-              </button>
-            </p>
-            <p>Print icon: <span class="glyphicon glyphicon-print"></span></p>
+          <div class="col-md-4 col-xs-12">
+            <img src="./img/aboutMe.jpg" alt="" class="img-circle img-responsive hvr-grow" style="max-width:180px;">
           </div>
         </div>
-
       </div>
 
+      <!--div id="photos" class="container">
+        <div class="row featurette-divider">
+          <div class="col-md-4">
+            <blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/5Vf-L7sYLJ/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">Una foto publicada por Jime Cas Ib (@jimena_alitzel)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-07-19T23:19:55+00:00">19 de Jul de 2015 a la(s) 4:19 PDT</time></p></div></blockquote>
+          </div>
+          <div class="col-md-4">
+            <blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/5DuwOxMYJP/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">Una foto publicada por Jime Cas Ib (@jimena_alitzel)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-07-13T01:42:45+00:00">12 de Jul de 2015 a la(s) 6:42 PDT</time></p></div></blockquote>
+
+          </div>
+          <div class="col-md-4">
+            <blockquote class="instagram-media" data-instgrm-version="4" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAAGFBMVEUiIiI9PT0eHh4gIB4hIBkcHBwcHBwcHBydr+JQAAAACHRSTlMABA4YHyQsM5jtaMwAAADfSURBVDjL7ZVBEgMhCAQBAf//42xcNbpAqakcM0ftUmFAAIBE81IqBJdS3lS6zs3bIpB9WED3YYXFPmHRfT8sgyrCP1x8uEUxLMzNWElFOYCV6mHWWwMzdPEKHlhLw7NWJqkHc4uIZphavDzA2JPzUDsBZziNae2S6owH8xPmX8G7zzgKEOPUoYHvGz1TBCxMkd3kwNVbU0gKHkx+iZILf77IofhrY1nYFnB/lQPb79drWOyJVa/DAvg9B/rLB4cC+Nqgdz/TvBbBnr6GBReqn/nRmDgaQEej7WhonozjF+Y2I/fZou/qAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://instagram.com/p/7CTIEAMYBS/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_top">Una foto publicada por Jime Cas Ib (@jimena_alitzel)</a> el <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2015-08-31T05:24:53+00:00">30 de Ago de 2015 a la(s) 10:24 PDT</time></p></div></blockquote>
+          </div>
+        </div>
+      </div-->
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12 spoons02">
+         <div class="spoons02image-inside"></div>
+        </div>
+       </div>
+      </div>
+      <!--div id="spoons2" class="container  featurette-divider">
+        <div class="row">
+          <div class="col-md-12"></div>          
+        </div>
+      </div-->
+
+        <div id="More" class="container center">
+        <div class="row">
+          <div class="col-md-4 col-xs-12">            
+            <img src="./img/Logo005.png" alt="" class="img-circle img-responsive hvr-grow" style="max-width:200px;">
+          </div>
+          <div class="col-md-8 col-xs-12">
+            <h2 class="title2 text-left">More about me</h2>
+            <p class="p2 text-left text-justify">I study ... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu mauris commodo, pulvinar nulla sit amet, condimentum sapien. Duis finibus, orci ut malesuada posuere, mi diam bibendum dui, nec interdum eros nibh volutpat ligula. Vivamus rutrum diam vel nisi ultrices tempor. Nam malesuada vehicula hendrerit. Integer commodo convallis tortor sed sodales. In eu dapibus leo. Morbi sollicitudin mollis imperdiet. Proin at auctor diam, nec sodales nisi. Vivamus sit amet pretium augue. Curabitur accumsan tincidunt nisi, at rutrum diam. Morbi felis leo, laoreet nec felis quis, lobortis tempor velit. Mauris viverra risus eros, eget ultrices urna lacinia vel. Vestibulum laoreet diam eget felis gravida sollicitudin. In laoreet pharetra sapien, scelerisque dictum massa dignissim id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi libero nisi, interdum non tincidunt eu, consequat nec magna.
+              Cras a lacinia augue. Aliquam erat volutpat. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum a congue tellus. Nulla consequat, massa quis blandit tempor, ipsum turpis lobortis mauris, quis posuere metus nisl id felis. Nulla pharetra lobortis tellus, imperdiet luctus elit rhoncus luctus. Cras laoreet purus ut dui auctor, non gravida mauris lacinia. Phasellus ac vestibulum justo, eu tempus felis. Mauris tempus ante ut metus auctor ultricies. Mauris lobortis aliquam nunc. Nulla a purus lorem. Aenean est purus, congue quis lorem a, consequat vehicula ante.
+              Nulla aliquet mauris id gravida fringilla. Cras porta lectus nec ipsum mattis porta. Vivamus nec magna velit. Donec sed arcu velit. Nam lacinia libero nisi, nec porta libero suscipit in. Vivamus arcu nunc, euismod cursus tellus eget, pulvinar accumsan libero. Mauris et est eget nisl tincidunt pharetra tempus quis tortor. Nulla vehicula, nunc sed condimentum pulvinar, nisi mi volutpat turpis, ac faucibus nulla magna id ipsum. Nullam tempus ullamcorper cursus. Integer ac quam nisl.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+        <div class="col-md-12 spoons03">
+         <div class="spoons03image-inside"></div>
+        </div>
+       </div>
+      </div>
+      <!--div id="spoons3" class="container  featurette-divider">
+        <div class="row">
+          <div class="col-md-12"></div>          
+        </div>
+      </div-->
+
+      <div id="Contact" class="container center">
+        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-deffault hvr-bounce-to-bottom" style="color:white; background-color:#e076a3;" href="https://instagram.com/jimena_alitzel" style="color:white;">INSTAGRAM</a>
+          </div>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-deffault hvr-bounce-to-bottom" style="color:white; background-color:#e076a3;" href="https://www.facebook.com/jcasib" style="color:white;">FACEBOOK</a>
+          </div>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-deffault hvr-bounce-to-bottom" style="color:white; background-color:#e076a3;" href="https://github.com/jimenalitzel" style="color:white;">GITHUB</a>
+          </div>
+          <div class="btn-group" role="group">
+            <a type="button" class="btn btn-deffault hvr-bounce-to-bottom" style="color:white; background-color:#e076a3;" href="mailto:jimena_alitzel@hotmail.com" style="color:white;">EMAIL</a>
+          </div>
+        </div>
+      </div>
+      <br>
       <footer class="container">
         <div>
-          <p>Copyright &copy; MyWebsite Jimena</p>
+          <hr>
+          <p>&copy; 2015 Jimena, jaja</p>
         </div>
       </footer>
 
     </body>
-  
+
+    <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
+    <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
+    <script async defer src="https://platform.instagram.com/en_US/embeds.js"></script>
     <script type="text/javascript" src="./js/vendor/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="./js/vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="./js/vendor/customjquery.js"></script>
