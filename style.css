@@ -60,7 +60,7 @@
   height: 150px;
 }
 .bgspoons01-inside {
-  padding-top: 80.15%; /* this is actually (426/1140)*100 */
+  padding-top: 80.15%;
 }
 .spoons02{
   background-image: url("./img/spoons.jpg");
@@ -71,7 +71,7 @@
   height: 100px;
 }
 .bgspoons02-inside {
-  padding-top: 96.80%; /* this is actually (426/1140)*100 */
+  padding-top: 96.80%;
 }
 .spoons03{
   background-image: url("./img/spoons3.jpg");
@@ -82,35 +82,8 @@
   height: 100px;
 }
 .bgspoons03-inside {
-  padding-top: 80.15%; /* this is actually (426/1140)*100 */
+  padding-top: 80.15%;
 }
-/*#spoons{
-   background: url("./img/spoons.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  height: 200px;
-  width:1700px;
-  opacity: 0.8;
-}
-#spoons2{
-   background-image: url("./img/spoons2.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
-  height: 100px;
-  width:2000px;
-  opacity: 1;
-}
-#spoons3{
-   background-image: url("./img/spoons3.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
-  height: 50px;
-  width:2000px;
-  opacity: 1;
-}*/
 #photos{
  height: 500px;
  width: 900px;
