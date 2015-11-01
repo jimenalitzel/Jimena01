@@ -51,6 +51,12 @@
   height: 200px;
   width:1700px;
 }
+.panelNewsletter{
+  color: #e076a3; //Suscribirse a la newsletter nombre email
+  background-color: #d0386c;
+  border-color: #e076a3;
+}
+
 .spoons01{
   background-image: url("./img/spoons.jpg");
   background-size: 100%;  

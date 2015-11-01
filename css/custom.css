@@ -39,22 +39,3 @@
             padding: 8px;
         }
 
-            #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-    #custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(130, 130, 130, 0.35);
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-toggle {
-        border-color: #828282;
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-        background-color: #828282;
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-        background-color: #828282;
-    }
-    #custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-    #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-        background-color: #f8f8f8;
-    }   

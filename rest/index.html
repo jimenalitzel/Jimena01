@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        //Pro tip: When using $.submit() always use it under a $(document).ready
+        $('#ajax-form').submit(function(event) {
+          //Pro tip: To prevent the normal flow of a submit we must use the following function, or you can write a return false at the end of the function
+          event.preventDefault();
+          //return false;
+
+          var url = $('#ajax-form #url').val();
+          var method = $('#ajax-form #method').val();
+
+          $.ajax({
+            url: url,
+            method: method,
+            beforeSend: function( xhr ) {
+            }
+          })
+            .done(function( data ) {
+              console.log(data);
+            });
+        });
+      });
+    </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>AJAX REST testing tool</h1>
+        <form id="ajax-form">
+          <div class="form-group">
+            <label for="url">REST API URL</label>
+            <input name="url" type="text" class="form-control" id="url" placeholder="url" value="http://52.23.181.223/rest/api/user/">
+          </div>
+
+          <div class="form-group">
+            <label for="method">HTTP Method</label>
+            <input name="method" type="text" class="form-control" id="method" placeholder="method">
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div> <!-- /container -->
+</body>
+</html>
